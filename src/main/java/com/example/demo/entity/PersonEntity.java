@@ -1,9 +1,13 @@
 package com.example.demo.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Data
 @Table(name= "person")
@@ -20,7 +24,5 @@ public class PersonEntity {
 
     @Column(name = "address", length = 50)
     private String address;
-
-
 
 }
